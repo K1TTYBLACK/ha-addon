@@ -17,4 +17,4 @@ RUN npm install --omit=dev --legacy-peer-deps
 COPY ["./node_modules", "/workspace/node_modules/"]
 EXPOSE 3000
 
-CMD ["node", "index.js"]
+CMD ["node", "main.js"]
