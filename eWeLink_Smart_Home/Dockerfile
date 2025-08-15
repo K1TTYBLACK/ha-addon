@@ -14,7 +14,7 @@ COPY ["./dist", "./package.json", "/workspace/"]
 WORKDIR /workspace
 
 RUN npm install --omit=dev --legacy-peer-deps
-
+COPY ["./node_modules", "/workspace/node_modules/"]
 EXPOSE 3000
 
-CMD ["node", "main.js"]
+CMD ["node", "index.js"]
